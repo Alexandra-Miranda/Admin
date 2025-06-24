@@ -1,0 +1,38 @@
+.inicio-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .post, .vaga {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  .data {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .vaga h4 {
+    margin: 0;
+  }
+  
+  .vaga-tipo {
+    font-size: 13px;
+    color: #0073b1;
+    font-weight: bold;
+  }
+  

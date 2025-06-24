@@ -1,0 +1,85 @@
+.profile-container {
+  width: 100%;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+.profile-header {
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.profile-content {
+  padding: 60px 20px 20px;
+}
+
+.subtitle {
+  color: #555;
+  margin: 5px 0;
+}
+
+.details {
+  color: #777;
+  margin: 5px 0 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.follow {
+  background-color: #0073b1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.message {
+  background-color: #e6f7ff;
+  color: #0073b1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tabs .active {
+  border-bottom: 2px solid #0073b1;
+  color: #0073b1;
+}
+
+.tab-content {
+  padding-top: 10px;
+}

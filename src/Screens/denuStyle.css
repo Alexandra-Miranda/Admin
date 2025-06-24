@@ -1,0 +1,95 @@
+:root {
+  --cor-base: #f9fafc;
+  --cor-card: #ffffff;
+  --cor-texto: #2d3748;
+  --cor-cinza: #a0aec0;
+  --cor-primaria: #6366f1;
+  --cor-secundaria: #06b6d4;
+  --cor-sucesso: #10b981;
+  --cor-perigo: #ef4444;
+  --cor-hover: #f0f4ff;
+  --cor-hover-row: #f9f9ff;
+  --fonte: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  font-family: var(--fonte);
+  background-color: var(--cor-base);
+  margin: 0;
+  padding: 0;
+}
+
+.denuncias-container {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: var(--cor-card);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  color: var(--cor-texto);
+}
+
+.denuncias-container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  margin-bottom: 24px;
+}
+
+.tabela-denuncias {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-denuncias th,
+.tabela-denuncias td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.tabela-denuncias th {
+  background-color: #f1f5f9;
+  color: var(--cor-texto);
+  text-transform: uppercase;
+}
+
+.tabela-denuncias tr:hover {
+  background-color: var(--cor-hover-row);
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-sucesso {
+  background-color: var(--cor-sucesso);
+}
+
+.btn-sucesso:hover {
+  background-color: #059669;
+}
+
+.btn-ignorar {
+  background-color: var(--cor-cinza);
+}
+
+.btn-ignorar:hover {
+  background-color: #718096;
+}
+
+.btn-ver {
+  background-color: var(--cor-secundaria);
+}
+
+.btn-ver:hover {
+  background-color: #0ea5e9;
+}

@@ -1,0 +1,107 @@
+.editar-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.editar-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0073b1;
+  font-weight: bold;
+}
+
+.editar-section {
+  margin-bottom: 1.5rem;
+}
+
+.editar-section label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #555;
+}
+
+.editar-section input[type="text"], .editar-section input[type="file"] {
+  width: 100%; 
+  box-sizing: border-box; 
+  margin-bottom: 10px; 
+}
+/*  */
+
+
+
+
+
+.editar-section textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.editar-section input[type="text"]:focus,
+.editar-section textarea:focus {
+  border-color: #0073b1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 115, 177, 0.3);
+}
+
+.editar-banner-preview,
+.editar-logo-preview {
+  margin-top: 1rem;
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editar-save-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.editar-save-button:hover {
+  background-color: #0056b3;
+}
+
+.editar-save-button:active {
+  background-color: #004a6e;
+}
+
+.editar-container textarea {
+  resize: none;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
+  .editar-container {
+    padding: 1.5rem;
+  }
+
+  .editar-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .editar-save-button {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,147 @@
+:root {
+  --cor-base: #f9fafc;
+  --cor-card: #ffffff;
+  --cor-texto: #2d3748;
+  --cor-cinza: #a0aec0;
+  --cor-primaria: #6366f1; /* roxo suave */
+  --cor-secundaria: #06b6d4; /* azul turquesa */
+  --cor-sucesso: #10b981;
+  --cor-perigo: #ef4444;
+  --cor-hover: #f0f4ff;
+  --cor-hover-row: #f9f9ff;
+  --fonte: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  font-family: var(--fonte);
+  background-color: var(--cor-base);
+  margin: 0;
+  padding: 0;
+}
+
+.vagas-container {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: var(--cor-card);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+  color: var(--cor-texto);
+  transition: all 0.3s ease;
+}
+
+.vagas-container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--cor-primaria);
+}
+
+.filtros {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filtros label {
+  font-weight: 500;
+  color: var(--cor-cinza);
+}
+
+.filtros select {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  font-size: 14px;
+  color: var(--cor-texto);
+}
+
+.tabela-vagas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.tabela-vagas th,
+.tabela-vagas td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.tabela-vagas th {
+  background-color: #f1f5f9;
+  color: var(--cor-texto);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tabela-vagas tr:hover {
+  background-color: var(--cor-hover-row);
+  transition: background 0.3s;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 4px 4px 0 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.btn-aprovar {
+  background-color: var(--cor-sucesso);
+  color: white;
+}
+
+.btn-aprovar:hover {
+  background-color: #059669;
+}
+
+.btn-recusar {
+  background-color: var(--cor-perigo);
+  color: white;
+}
+
+.btn-recusar:hover {
+  background-color: #dc2626;
+}
+
+.btn-editar {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #4f46e5;
+}
+
+.btn-arquivar {
+  background-color: #facc15;
+  color: #1f2937;
+}
+
+.btn-arquivar:hover {
+  background-color: #eab308;
+}
+
+@media (max-width: 768px) {
+  .tabela-vagas th,
+  .tabela-vagas td {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .filtros {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,33 @@
+.video-list-container {
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .video-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .video-table th, .video-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .video-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .video-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
